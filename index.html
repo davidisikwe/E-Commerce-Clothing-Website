@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>IFMHA Clothing</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/f7de093463.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
-        
-    </head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            
+</head>
     <body>
         <div class="header">
         <div class="search">
@@ -29,44 +35,13 @@
         <div class="iconUSD"><p>USD</p><i class="fa-solid fa-chevron-down"></i></div>
         </div>
         </div>
-<!--------------------Carousel--------------------->
-      <!-- <div class="carousel-section">
-
-            <div class="myslides fade">
-                <div class="numbertext">1/3</div>
-                <img src="IMG_6440.JPG" style="width: 100%"/>
-                <div class="text">Caption One</div>
-            </div>
-
-            <div class="myslides fade">
-                <div class="numbertext">2/3</div>
-                <img src="Screenshot 2024-01-21 180109.png" style="width: 100%"/>
-                <div class="text">Caption Two</div>
-            </div>
-
-            <div class="myslides fade">
-                <div class="numbertext">3/3</div>
-                <img src="Screenshot 2024-01-21 180204.png" style="width: 100%"/>
-                <div class="text">Caption Three</div>
-            </div>
-            
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-
-        <div>
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div> -->
-
+<!------------------------------------------------------------------Carousel-------------------------------------------------->
 
 
         <!-- Slideshow container -->
-<div class="slideshow-container">
+<!---<div class="slideshow-container">
 
-    <!-- Full-width images with number and caption text -->
+    <!-- Full-width images with number and caption text 
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
       <img src="https://media.istockphoto.com/id/1038044222/photo/love-to-run-together.jpg?s=1024x1024&w=is&k=20&c=Kd0pk6o5dCxmTe1kHDTlBN7ALTGgciO3Hse0QT7Bdnk=" style="width:100%">
@@ -83,73 +58,149 @@
       <div class="numbertext">3 / 3</div>
       <img src="https://media.istockphoto.com/id/1337118547/photo/full-length-shot-of-sportive-mature-man-in-sportswear-holding-basketball-ball-and-smiling-at.jpg?s=1024x1024&w=is&k=20&c=KL7U14ImIZPkJ2tLKxSndspNz5Li50d_NdXNVTP8XVg=" style="width:100%">
       <div class="text">Caption Three</div>
-    </div>
+    </div>--->
   
-    <!-- Next and previous buttons -->
+    <!-- Next and previous buttons 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
-  <br>
+  <br> ---->
   
-  <!-- The dots/circles -->
+  <!-- The dots/circles 
   <div style="text-align:center">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-  
+  </div>-->
 
 
+    <div id="AutoPlayingCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="https://media.istockphoto.com/id/610692614/photo/feeling-just-casual.jpg?s=2048x2048&w=is&k=20&c=haYsjPvGnCN59L99QR0367yKFOd57LESmKd7XrgoloI=" class="d-block w-100" alt="IFMHA" />
+            </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://media.istockphoto.com/id/669750242/photo/young-american-man-smiling-happy-with-sunglasses-portrait-outdoor.jpg?s=2048x2048&w=is&k=20&c=Ql92tTIOHwfQOk3cNFOn6Efi5xKAu7NR71Zch8XtoHU=" class="d-block w-100" alt="IFMHA" />
+            </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://media.istockphoto.com/id/538810953/photo/fashionable-young-adult-looking-away.jpg?s=2048x2048&w=is&k=20&c=d2R6Rjlrfn8TPo3dk2HNvpCQXmLV-inAJBVMeJySZHY=" class="d-block w-100" alt="IFMHA" />
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#AutoPlayingCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#AutoPlayingCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>    
+   
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#AutoPlayingCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#AutoPlayingCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#AutoPlayingCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+</div>
+
+<!--------------------------------------------------Product------------------------------------------------------------------------->
+<div class="homecard1">
+
+<div><h2 style="text-align: center; padding-top: 32px; font-weight: 700; font-family: 'Poppins', sans-serif;">Trending</h2></div>
+
+    <!--<br>--->
+
+<section class="product"> 
+    
+    <button class="pre-btn"><img src="arrow.png" alt=""></button>
+    <button class="nxt-btn"><img src="arrow.png" alt=""></button>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-thumb" alt="">
+                <button class="card-btn">Quick Buy</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-thumb" alt="">
+                <button class="card-btn">Quick Buy</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-thumb" alt="">
+                <button class="card-btn">Quick Buy</button>
+            </div>
+        </div>
         
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-thumb" alt="">
+                <button class="card-btn">Quick Buy</button>
+            </div>
+        </div>
 
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-thumb" alt="">
+                <button class="card-btn">Quick Buy</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-thumb" alt="">
+                <button class="card-btn">Quick Buy</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-thumb" alt="">
+                <button class="card-btn">Quick Buy</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-thumb" alt="">
+                <button class="card-btn">Quick Buy</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-thumb" alt="">
+                <button class="card-btn">Quick Buy</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-thumb" alt="">
+                <button class="card-btn">Quick Buy</button>
+            </div>
+        </div>
+
+
+    </div>
+</section>     
+
+
+</div> 
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="index.js"></script>
     </body>
 </html>
 
-<!-------------------------------------------Product----------------------------------------->
 
-<h2 class="Section-tag">Trending</h2>
-
-    <div class="homepage-card1">
-
-    <div class="card1">
-        <div class="card-img">
-            <img class="img-style1" src="https://media.istockphoto.com/id/1040478272/photo/serious-young-afro-american-man-standing-in-studio.jpg?s=1024x1024&w=is&k=20&c=OBM4s9aLQxVVZt9lnXP79I0ufGdGHgfWcsxz67vCdtE="/>
-        </div>
-    </div>
-
-    <div class="card1">
-        <div class="card-img">
-            <img class="img-style1" src="https://media.istockphoto.com/id/1040478272/photo/serious-young-afro-american-man-standing-in-studio.jpg?s=1024x1024&w=is&k=20&c=OBM4s9aLQxVVZt9lnXP79I0ufGdGHgfWcsxz67vCdtE="/>
-        </div>
-    </div>
-
-    <div class="card1">
-        <div class="card-img">
-            <img class="img-style1" src="https://media.istockphoto.com/id/1040478272/photo/serious-young-afro-american-man-standing-in-studio.jpg?s=1024x1024&w=is&k=20&c=OBM4s9aLQxVVZt9lnXP79I0ufGdGHgfWcsxz67vCdtE="/>
-        </div>
-    </div>
-
-    <div class="card1">
-        <div class="card-img">
-            <img class="img-style1" src="https://media.istockphoto.com/id/1040478272/photo/serious-young-afro-american-man-standing-in-studio.jpg?s=1024x1024&w=is&k=20&c=OBM4s9aLQxVVZt9lnXP79I0ufGdGHgfWcsxz67vCdtE="/>
-        </div>
-    </div>
-
-
-    <div class="card1">
-        <div class="card-img">
-            <img class="img-style1" src="https://media.istockphoto.com/id/1040478272/photo/serious-young-afro-american-man-standing-in-studio.jpg?s=1024x1024&w=is&k=20&c=OBM4s9aLQxVVZt9lnXP79I0ufGdGHgfWcsxz67vCdtE="/>
-        </div>
-    </div>
-
-    <div class="card1">
-        <div class="card-img">
-            <img class="img-style1" src="https://media.istockphoto.com/id/1040478272/photo/serious-young-afro-american-man-standing-in-studio.jpg?s=1024x1024&w=is&k=20&c=OBM4s9aLQxVVZt9lnXP79I0ufGdGHgfWcsxz67vCdtE="/>
-        </div>
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
-    </div>

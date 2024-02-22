@@ -26,7 +26,6 @@
    // dots[slideIndex-1].className += " active";
  // }
 
-<<<<<<< HEAD
  const productContainers = [...document.querySelectorAll('.product-container')];
  const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
  const preBtn = [...document.querySelectorAll('.pre-btn')];
@@ -43,9 +42,3 @@
          item.scrollLeft -= containerWidth;
      })
  })
-=======
-
-
-
- 
->>>>>>> 91bb42e397ef23fd50ea746de5c50720fbd019af
